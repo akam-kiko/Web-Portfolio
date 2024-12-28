@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/querry.css">
+    <!-- GOOGLE FONTS (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOX ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo"><span>Akam</span>Kiko</a>
+
+        <nav class="navBar">
+            <a href="#" class="">Portfolio</a>
+            <a href="#" class="">Services</a>
+            <a href="#" class="">Experiences</a>
+            <a href="#" class="">Projects</a>
+            <a href="#" class="">Education</a>
+        </nav>
+            <a href="#" class="contact">Contact Me</a>
+            <a class="burger" onclick="showSidebar()" href="#" style="margin-left: 5px;"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#e8eaed"> <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" /> </svg></a>
+    </header>
+
+    <!-- Burger Menu -->
+    <div class="sidebar">
+        <nav class="navBar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="#" class="">Services</a>
+            <a href="#" class="">Experiences</a>
+            <a href="#" class="">Projects</a>
+            <a href="#" class="">Education</a>
+            <a href="#" class="">Contact Me</a>
+            <a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a>
+        </nav>
+    </div>
+
+    <!-- SECTION -->
+    <section class="home">
+        <div class="home-content">
+            <div class="img-box1">
+                <img src="images/ren.jpg" alt="adalah-guwa">
+            </div>
+
+            <h3>Hi</h3>
+            <h1>I'm <span>AkamKiko<br></span> a wannabe Front End Web Developer!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut voluptate sunt labore aliquam
+                molestias, cupiditate non autem quisquam perferendis totam quae sit similique distinctio aperiam ex ad
+                delectus cumque?</p>
+
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Experiences</button>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="images/ren.jpg" alt="my-wife">
+        </div>
+    </section>
+
+    <section class="about">
+        <img class="about-photo" src="images/ren2.jpg" alt="">
+
+        <div class="aboutMe-content">
+            <div class="img-box2">
+                <img class="about-photo1" src="images/ren2.jpg" alt="">
+            </div>
+            <h3>About <span>Me</span></h3>
+            <h2>Frontend <span>Developer</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit saepe delectus iure? Ipsum,
+                voluptatum recusandae atque harum itaque nemo ducimus voluptas dolores similique error suscipit aut
+                molestias aliquid laboriosam?</p>
+            <button class="btn-2">Experiences</button>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Services</h2>
+        <p>As a Frontend Developer, I specialize in creating seamless and visually engaging user experiences. Here’s
+            what I can bring to your project:</p>
+        <div class="services-content-container">
+            <div class="services-content">
+                <img src="images/UInUX.png" alt="">
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and interactive interfaces tailored to meet your brand and user needs.</p>
+            </div>
+
+            <div class="services-content">
+                <img src="images/webdev.jpg" alt="">
+                <h3>Website Development</h3>
+                <p>Building stunning and visually appealing websites using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="services-content">
+                <img src="images/responsive.jpg" alt="">
+                <h3>Responsive Web Design</h3>
+                <p>Crafting websites that look stunning and function flawlessly across all devices, from desktops to
+                    smartphones.</p>
+            </div>
+
+            <div class="services-content">
+                <img src="images/interactive.png" alt="">
+                <h3>Interactive Features</h3>
+                <p>Adding dynamic elements such as sliders, modals, dropdowns, and animations using JavaScript or
+                    libraries like React, Bootsrap.</p>
+            </div>
+        </div>
+        <p>Let’s turn your ideas into a vibrant digital reality! Reach out to discuss how we can collaborate.</p>
+    </section>
+
+
+    <section class="contact-form">
+        <h2>Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="#"><box-icon type='logo' name='twitter'></box-icon></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+
+        <div class="footerNav">
+            <a href="#">FAQ</a>
+            <a href="#">Services</a>
+            <a href="#">About Me</a>
+            <a href="#">Content</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <p>2024 AkamKiko | All Rights Reserved</p>
+    </footer>
+</body>
+
+<!-- Script -->
+<script src="script.js"></script>
+</html>
